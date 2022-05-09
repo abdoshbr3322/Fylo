@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c122c;
+}
+.container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.background {
+  height: 100vh;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .background {
+    background-image: url("../images/bg-desktop.png");
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
