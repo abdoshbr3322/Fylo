@@ -4,59 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 
 <body>
 
-  <main>
-
-    <h1 class="sr-only">Fylo data storage</h1>
-
-    <div class="top">
-
-      <img class="logo" src="images/logo.svg" alt="Fylo.">
-
-      <ul class="functions">
-        <li>
-          <button aria-label="Info"><img src="images/icon-document.svg" alt="" aria-hidden="true"></button>
-        </li>
-        <li>
-          <button aria-label="Files"><img src="images/icon-folder.svg" alt="" aria-hidden="true"></button>
-        </li>
-        <li>
-          <button aria-label="Upload"><img src="images/icon-upload.svg" alt="" aria-hidden="true"></button>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="bottom">
-
-      <p class="data-text">You’ve used <span class="data">815 GB</span> of your storage</p>
-
-      <div class="storage-display">
-        <div class="progress-bar"></div>
-        <div class="data-display">
-          <span>0 GB</span>
-          <span>1000 GB</span>
+  <div class="landing">
+    <div class="container">
+      <div class="boxs">
+        <div class="box one">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" >
+        </div>
+        <div class="icons">
+          <span><img src="images/icon-document.svg"></span>
+          <span><img src="images/icon-folder.svg"></span>
+          <span><img src="images/icon-upload.svg"></span>
         </div>
       </div>
 
-      <div class="data-bubble">
-        <p class="data-bubble-text">
-          <span>185</span>
-          GB Left
-        </p>
+      <div class="box two">
+        <div class="remained">
+          1<span>8</span><span>5</span> <span class="word">GB LEFT</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="usage">
+          You've used <b><span>8</span><span>1</span><span>5</span> GB</b> of your storage
+        </div>
+        <div class="prog">
+          <span class="fill" data-progress="81.5"></span>
+        </div>
       </div>
-
+      </div>
     </div>
-
-  </main>
+  </div>
 
 </body>
 

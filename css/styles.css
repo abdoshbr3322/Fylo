@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c122c;
+  font-family: 'Raleway', sans-serif;
+}
+.landing {
+  height: 100vh;
+  background-image: url("../images/bg-mobile.png");
+}
+@media (min-width: 768px) {
+  .landing {
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.landing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .boxs {
+  display: grid;
+  grid-template-columns: 300px minmax(300px ,500px);
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .landing .boxs {
+    grid-template-columns: minmax(250px ,300px);
+    gap: 20px;
+  }
+}
+.landing .box {
+  background-color: #1d2b68;
+  padding: 40px;
+  border-radius: 10px;
+}
+.landing .box.one {
+  width: 300px;
+  border-top-right-radius: 80px;
+}
+.landing .box.one .logo {
+  margin-bottom: 20px;
+}
+.landing .box.one .icons {
+  display: flex;
+}
+.landing .box.one .icons span {
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: hsl(229, 57%, 11%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.landing .box.two {
+  position: relative;
+}
+.landing .box.two .remained {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  animation: move-up-down 1s linear infinite alternate;
+}
+@media (max-width: 767px) {
+  .landing .box.two .remained {
+    animation: unset;
+    top: unset;
+    right: unset;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes move-up-down {
+  to {
+    transform: translateY(-5px);
+  }
+}
+.landing .box.two .remained::before {
+  content: "";
+  border-style: solid;
+  border-width: 15px;
+  border-color: white white transparent transparent;
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+}
+@media (max-width: 767px) {
+  .landing .box.two .remained::before {
+    display: none;
+  }
+}
+.landing .box.two .remained .word {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  top: -5px;
+}
+.landing .box.two .usage {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.landing .box.two .prog {
+  width: 100%;
+  height: 12px;
+  background-color: #151d48;
+  box-sizing: content-box;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #151d48;
+  position: relative;
+  margin-bottom: 20px;
+}
+.landing .box.two .prog::before,
+.landing .box.two .prog::after {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+}
+.landing .box.two .prog::before {
+  content: "0 GB";
+  bottom: -25px;
+  left: -1px;
+}
+.landing .box.two .prog::after {
+  content: "1000 GB";
+  bottom: -25px;
+  right: -1px;
+}
+.landing .box.two .prog .fill {
+  display: inline-block;
+  background-color: red;
+  height: 100%;
+  width: 81.5%;
+  border-radius: inherit;
+  background-image: linear-gradient(to right , #ffa399 , #ff4d97);
+  position: relative;
+}
+.landing .box.two .prog .fill::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: 1px;
+}
