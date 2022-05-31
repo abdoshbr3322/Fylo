@@ -11,18 +11,12 @@ Then I Have Gained A Little Skills That I Didn't Have It <br> So I'm Very Greatf
 - Use The Animation Shorthand 
 - And Finally Is That <a href="https://www.frontendmentor.io/">Fron-End-Mentor</a> is An Amzing WebSite 
 
-<p id="text">This Is The <strong>Challenge </strong> Design 
-</p>
+This Is The **Challenge** Design
+------------
 
 <img src="./design/desktop-design.jpg">
 
-<p id="text">And This Is My Solution</p>
+And This Is My **Solution**
+------------
 
 <img src="./images/my-design.jpg">
-
-<style>
-#text {
-  margin: 20px auto;
-  width: fit-content;
-}
-</style>
